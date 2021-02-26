@@ -50,7 +50,7 @@ export function CountdownProvider({ children }) {
     if (isActive && time > 0) {
       countDownTimeout = setTimeout(() => {
         setTime(time - 1);
-      }, 1000);
+      }, 1);
     } else if (isActive && time === 0) {
       setHasFinished(true);
       setIsActive(false);
